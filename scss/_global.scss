@@ -1,0 +1,11 @@
+.wrapper {
+    max-width: 1440px;
+    width: calc(100vw - 16px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.table {
+    padding: 40px 67px 60px; 
+    background-color: var(--bgMaskDark);
+}

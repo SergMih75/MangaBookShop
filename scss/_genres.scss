@@ -1,0 +1,146 @@
+.genres-title {
+	margin: 40px 0;
+	padding: 15px 0 15px 42px;
+	font-family: var(--firstFont);
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: var(--darkRedColor);
+	border: none;
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+	background: linear-gradient(90deg, #fff 0%, #43463f 74.04%);
+}
+
+.genres-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 76px;
+}
+
+.genres-item {
+	position: relative;
+	width: 400px;
+	height: 400px;
+
+	& > img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.genres-btn {
+		padding: 15px 0;
+		position: absolute;
+		left: 32px;
+		right: 32px;
+		bottom: 20px;
+		font-family: var(--firstFont);
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 110%;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		text-align: center;
+		text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(4px);
+		background: rgba(179, 92, 48, 0.8);
+		border: none;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-ms-border-radius: 15px;
+		-o-border-radius: 15px;
+	}
+}
+
+.genre-description {
+	display: inline-block;
+	padding: 25px 25px 25px 57px;
+	margin-bottom: 25px;
+	border: none;
+	border-radius: 60px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	background-color: var(--bgShopping);
+
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}
+
+.genre-collection {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.genre-item {
+	width: 420px;
+	border: none;
+	display: flex;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	background-color: var(--bgShopping);
+}
+
+.book-data {
+	margin: 45px 10px 25px 15px;
+}
+
+.book-subdata {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 10px;
+}
+.manga-pic {
+	width: 148px;
+}
+
+.manga-type {
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.manga-name {
+	margin-bottom: 10px;
+	font-family: var(--firstFont);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}
+
+.manga-genre,
+.manga-look {
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.manga-renting {
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}

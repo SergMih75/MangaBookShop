@@ -1,0 +1,33 @@
+.footer {
+	padding: 96px 0 79px;
+	background-color: var(--bgFooter);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&-doc {
+		margin-bottom: 77px;
+		display: flex;
+		justify-content: center;
+		gap: 39px;
+	}
+
+	&-doc > li {
+		font-family: var(--firstFont);
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 110%;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+	}
+}
+
+.footer > p {
+	font-family: var(--firstFont);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}

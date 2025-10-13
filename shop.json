@@ -1,0 +1,38 @@
+[
+	{
+		"pic": "./img/main/main_shop_img1.png",
+		"name": "Манга My Hero ",
+		"price": 450,
+		"description": "Стань героем в мире суперспособностей и дружбы!"
+	},
+	{
+		"pic": "./img/main/main_shop_img2.png",
+		"name": "Манга Naruto",
+		"price": 450,
+		"description": "Стань ниндзя и следуй за Наруто в его приключениях!"
+	},
+	{
+		"pic": "./img/main/main_shop_img3.png",
+		"name": "Манга Attack on",
+		"price": 450,
+		"description": "Сражайся с титановыми монстрами и защищай человечество!"
+	},
+	{
+		"pic": "./img/main/main_shop_img1.png",
+		"name": "Манга One Piece",
+		"price": 450,
+		"description": "Эпическая история о пиратских приключениях и дружбе!"
+	},
+	{
+		"pic": "./img/main/main_shop_img2.png",
+		"name": "Манга D. Note",
+		"price": 450,
+		"description": "Умный триллер о справедливости и морали с нотами смерти!"
+	},
+	{
+		"pic": "./img/main/main_shop_img3.png",
+		"name": "Манга D. Slayer",
+		"price": 450,
+		"description": "Сразись с демонами и спаси свою семью!"
+	}
+]
