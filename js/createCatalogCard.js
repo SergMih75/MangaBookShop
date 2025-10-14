@@ -29,4 +29,5 @@ function createCatalogCard(catalogData) {
             `
 		catalogBlock.append(catalogItem)
 	})
+    mangaCardData()
 }

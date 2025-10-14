@@ -107,14 +107,14 @@ function creatureMangaCard(mangaData) {
 			item.genre3 == genresTitle.innerHTML ||
 			item.genre4 == genresTitle.innerHTML
 		) {
-			console.log(item)
 			let genreItem = document.createElement('div')
 			genreItem.classList.add('book-item')
 			genreItem.innerHTML = `
-            <img class="manga-pic" src="${item.pic}" alt="">
-                        <div class="book-data">
-                            <p class="manga-type">${item.type}</p>
-                            <h3 class="manga-name">${item.name}</h3>
+
+                <img class="manga-pic" src="${item.pic}" alt="">
+                    <div class="book-data">
+                        <p class="manga-type">${item.type}</p>
+                        <h3 class="manga-name">${item.name}</h3>
                             <div class="book-subdata">
                                 <p class="manga-genre">${item.genre1}</p>
                                 <p class="manga-genre">${item.genre2}</p>
@@ -123,9 +123,11 @@ function creatureMangaCard(mangaData) {
                                 <p class="manga-renting">${item.renting}</p>
                                 <p class="manga-look">${item.look}</p>
                             </div>
-                        </div>
+                    </div>
+
             `
 			genreCollection.appendChild(genreItem)
 		}
 	})
+    mangaCardData()
 }

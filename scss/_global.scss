@@ -22,6 +22,11 @@
 	-o-border-radius: 30px;
 	background-color: var(--bgShopping);
 	cursor: pointer;
+
+	& > a {
+		display: inline-block;
+		width: 100%;
+	}
 }
 
 .book-item:hover {

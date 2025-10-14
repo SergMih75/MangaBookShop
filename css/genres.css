@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: var(--lightColor);
+  background-color: var(--bgColorLight);
 }
 
 .wrapper {
@@ -49,6 +49,10 @@ body {
   -o-border-radius: 30px;
   background-color: var(--bgShopping);
   cursor: pointer;
+}
+.book-item > a {
+  display: inline-block;
+  width: 100%;
 }
 
 .book-item:hover {
