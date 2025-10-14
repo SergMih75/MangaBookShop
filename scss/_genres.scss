@@ -23,8 +23,8 @@
 
 .genres-item {
 	position: relative;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 
 	& > img {
 		width: 100%;
@@ -40,12 +40,12 @@
 		bottom: 20px;
 		font-family: var(--firstFont);
 		font-weight: 500;
-		font-size: 40px;
+		font-size: 30px;
 		line-height: 110%;
 		letter-spacing: -0.02em;
 		text-transform: uppercase;
 		text-align: center;
-		text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+		// text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 		backdrop-filter: blur(4px);
 		background: rgba(179, 92, 48, 0.8);
 		border: none;
@@ -81,66 +81,4 @@
 	flex-wrap: wrap;
 	gap: 10px;
 	justify-content: space-between;
-}
-
-.genre-item {
-	width: 420px;
-	border: none;
-	display: flex;
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-	background-color: var(--bgShopping);
-}
-
-.book-data {
-	margin: 45px 10px 25px 15px;
-}
-
-.book-subdata {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	gap: 10px;
-}
-.manga-pic {
-	width: 148px;
-}
-
-.manga-type {
-	font-family: var(--firstFont);
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 110%;
-	letter-spacing: -0.02em;
-	color: rgba(255, 255, 255, 0.4);
-}
-
-.manga-name {
-	margin-bottom: 10px;
-	font-family: var(--firstFont);
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 110%;
-	letter-spacing: -0.02em;
-}
-
-.manga-genre,
-.manga-look {
-	font-family: var(--firstFont);
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 110%;
-	letter-spacing: -0.02em;
-	color: rgba(255, 255, 255, 0.4);
-}
-
-.manga-renting {
-	font-family: var(--firstFont);
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 110%;
-	letter-spacing: -0.02em;
 }

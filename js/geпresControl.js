@@ -109,7 +109,7 @@ function creatureMangaCard(mangaData) {
 		) {
 			console.log(item)
 			let genreItem = document.createElement('div')
-			genreItem.classList.add('genre-item')
+			genreItem.classList.add('book-item')
 			genreItem.innerHTML = `
             <img class="manga-pic" src="${item.pic}" alt="">
                         <div class="book-data">

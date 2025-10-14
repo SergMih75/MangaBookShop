@@ -9,3 +9,71 @@
     padding: 40px 67px 60px; 
     background-color: var(--bgMaskDark);
 }
+
+// Карточка манги для каталога, подборка для жанра
+.book-item {
+	width:395px;
+	border: none;
+	display: flex;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	background-color: var(--bgShopping);
+	cursor: pointer;
+}
+
+.book-item:hover {
+	box-shadow: 0 0 6px var(--darkRedColor);
+}
+
+.book-data {
+	margin: 45px 10px 25px 15px;
+}
+
+.book-subdata {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 10px;
+}
+.manga-pic {
+	width: 148px;
+}
+
+.manga-type {
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.manga-name {
+	margin-bottom: 10px;
+	font-family: var(--firstFont);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}
+
+.manga-genre,
+.manga-look {
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.manga-renting {
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}

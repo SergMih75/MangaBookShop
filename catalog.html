@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/catalog.css" />
+		<title>Каталог</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="table">
+				<nav class="nav">
+					<a href="./index.html" class="nav-logo">МАНГА</a>
+					<menu>
+						<ul class="menu">
+							<li><a href="./catalog.html" class="menu-item">Читать</a></li>
+							<li><a href="#" class="menu-item">Форум</a></li>
+							<li><a href="./genres.html" class="menu-item">Жанры</a></li>
+							<li><a href="#" class="menu-item">Профиль</a></li>
+						</ul>
+					</menu>
+					<div class="nav-btn">
+						<button class="enter">Войти</button>
+						<button class="registration">Регистрация</button>
+					</div>
+				</nav>
+
+				<h1 class="catalog-title">Каталог</h1>
+                <div class="catalog">
+					<div class="filter">
+						<h4 class="filter-title">Фильтр</h4>
+						<select name="genre" id="" class="filter-select">
+							<option value="" selected class="select-option">
+								Жанр манги
+							</option>
+							<option value="Романтика" class="select-option">Романтика</option>
+							<option value="Экшен" class="select-option">Экшен</option>
+							<option value="Школа" class="select-option">Школа</option>
+							<option value="Вампиры" class="select-option">Вампиры</option>
+							<option value="Детектив" class="select-option">Детектив</option>
+							<option value="Драма" class="select-option">Драма</option>
+							<option value="Арт" class="select-option">Арт</option>
+							<option value="Додзинси" class="select-option">Додзинси</option>
+							<option value="Фэнтези" class="select-option">Фэнтези</option>
+						</select>
+
+						<select name="type" id="" class="filter-select">
+							<option value="" selected class="select-option">Тип манги</option>
+							<option value="Манга" class="select-option">Манга</option>
+						</select>
+
+						<select name="teg" id="" class="filter-select">
+							<option value="" selected class="select-option">
+								Выбрать теги
+							</option>
+							<option value="" class="select-option"></option>
+						</select>
+
+						<select name="status" id="" class="filter-select">
+							<option value="" selected class="select-option">Статус</option>
+							<option value="" class="select-option"></option>
+						</select>
+
+						<select name="age" id="" class="filter-select">
+							<option value="" selected class="select-option">
+								Возрастной рейтинг
+							</option>
+							<option value="" class="select-option"></option>
+						</select>
+
+						<select name="renting" id="" class="filter-select">
+							<option value="" selected class="select-option">Рейтинг</option>
+							<option value="" class="select-option"></option>
+						</select>
+
+						<select name="year" id="" class="filter-select">
+							<option value="" selected class="select-option">
+								Год выпуска
+							</option>
+							<option value="" class="select-option"></option>
+						</select>
+
+						<h4 class="filter-title filter-title__mt">Количество глав</h4>
+						<div class="chapters-select">
+							<label class="chapters-coint"
+								>до 50
+								<input type="radio" name="49" class="chapters-ratio"/>
+							</label>
+							<label class="chapters-coint"
+								>50-100
+								<input type="radio" name="50-100" class="chapters-ratio"/>
+							</label>
+							<label class="chapters-coint"
+								>100-200
+								<input type="radio" name="101-200" class="chapters-ratio"/>
+							</label>
+							<label class="chapters-coint"
+								>более 200
+								<input type="radio" name="201" class="chapters-ratio"/>
+							</label>
+						</div>
+
+						<h4 class="filter-title filter-title__mt">Исключить</h4>
+						<select name="genre" id="" class="filter-select">
+							<option value="" selected class="select-option">
+								Жанр манги
+							</option>
+							<option value="Романтика" class="select-option">Романтика</option>
+							<option value="Экшен" class="select-option">Экшен</option>
+							<option value="Школа" class="select-option">Школа</option>
+							<option value="Вампиры" class="select-option">Вампиры</option>
+							<option value="Детектив" class="select-option">Детектив</option>
+							<option value="Драма" class="select-option">Драма</option>
+							<option value="Арт" class="select-option">Арт</option>
+							<option value="Додзинси" class="select-option">Додзинси</option>
+							<option value="Фэнтези" class="select-option">Фэнтези</option>
+						</select>
+
+						<select name="type" id="" class="filter-select">
+							<option value="" selected class="select-option">Тип манги</option>
+							<option value="Манга" class="select-option">Манга</option>
+						</select>
+
+						<select name="teg" id="" class="filter-select">
+							<option value="" selected class="select-option">
+								Выбрать теги
+							</option>
+							<option value="" class="select-option"></option>
+						</select>
+
+						<button class="filter-start">Применить</button>
+					</div>
+					<div class="catalog-block"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/createCatalogCard.js"></script>
+	</body>
+</html>

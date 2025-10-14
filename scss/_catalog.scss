@@ -1,0 +1,132 @@
+.catalog {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	&-title {
+		margin: 40px 0;
+		padding: 15px 0 15px 42px;
+		font-family: var(--firstFont);
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 110%;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		color: var(--darkRedColor);
+		border: none;
+		border-top-left-radius: 60px;
+		border-bottom-left-radius: 60px;
+		background: linear-gradient(90deg, #fff 0%, #43463f 74.04%);
+	}
+
+	&-block {
+		width: calc(100% - 260px);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		row-gap: 16px;
+	}
+}
+
+.filter {
+	width: 250px;
+
+	&-title {
+		font-family: var(--firstFont);
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 110%;
+		letter-spacing: -0.02em;
+		color: #ffcaaf;
+		margin-bottom: 10px;
+
+		&__mt {
+			margin-top: 20px;
+		}
+	}
+
+	&-select {
+		width: 100%;
+		padding: 21px 30px;
+		margin-bottom: 16px;
+		border: none;
+		border-radius: 60px;
+		-webkit-border-radius: 60px;
+		-moz-border-radius: 60px;
+		-ms-border-radius: 60px;
+		-o-border-radius: 60px;
+		background: rgba(255, 255, 255, 0.1);
+
+		font-family: var(--firstFont);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 110%;
+		letter-spacing: -0.02em;
+	}
+
+	&-select:active,
+	&-select:focus {
+		border: none;
+	}
+}
+
+.select-option {
+	background: var(--bgShoppingCard);
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}
+
+.chapters-select {
+	display: flex;
+	justify-content: space-between;
+}
+
+.chapters-coint {
+	border-radius: 40px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.05);
+	font-family: var(--firstFont);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	color: #ffcaaf;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+	cursor: pointer;
+}
+
+.chapters-coint:hover {
+	box-shadow: 0 0 4px var(--darkRedColor);
+}
+
+.chapters-ratio {
+	display: none;
+}
+
+.filter-start {
+	border-radius: 60px;
+	border: none;
+	padding: 16px 32px;
+	width: 100%;
+	// height: 55px;
+	background: #ffcaaf;
+	font-family: var(--firstFont);
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 145%;
+	letter-spacing: -0.01em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #b35c30;
+	cursor: pointer;
+}
+
+.filter-start:hover {
+	box-shadow: 0 0 8px var(--darkRedColor);
+}
