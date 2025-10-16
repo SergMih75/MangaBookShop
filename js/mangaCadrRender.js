@@ -19,11 +19,14 @@ function createMangaCard(catalogData) {
 			mangaPic.innerHTML = `
 
                 <img  src="${item.pic}" alt="">
-				<button class="control-manga-btn">Читать</button>
+				<button class="control-manga-btn  read-btn">Читать</button>
                 <button class="control-manga-btn  control-manga-btn__slim">В закладки</button>
                 <button class="control-manga-btn  control-manga-btn__slim  control-manga-btn__dark">Пожаловаться</button>
             `
 			controlManga.insertBefore(mangaPic, dataManga)
+
+			const readBtn = document.querySelector('.read-btn')
+			readBtnControl(readBtn)
 
 			let mangaTitle = document.querySelector('.data-manga-title')
 			mangaTitle.innerHTML = `${item.name}`
