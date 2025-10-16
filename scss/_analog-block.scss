@@ -1,0 +1,44 @@
+.analog {
+	width: 220px;
+
+	& > h3 {
+		margin-bottom: 22px;
+		font-family: var(--secondFont);
+		font-weight: 400;
+		font-size: 20px;
+	}
+
+	&-block {
+		cursor: pointer;
+	}
+
+	&-item {
+		display: flex;
+		justify-content: start;
+		align-items: flex-start;
+		gap: 10px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 30px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		-o-border-radius: 30px;
+&:hover  {
+			background-color: rgb(141, 128, 128);
+		}
+
+		& > img {
+			width: 65px;
+		}
+
+		& > h4 {
+			margin-top: 12px;
+			font-family: var(--firstFont);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 110%;
+			letter-spacing: -0.02em;
+		}
+	}
+}

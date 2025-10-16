@@ -3,11 +3,22 @@
     width: calc(100vw - 16px);
     margin: 0 auto;
     overflow: hidden;
+
+	
 }
 
 .table {
     padding: 40px 67px 60px; 
     background-color: var(--bgMaskDark);
+
+	// &__manga-book-card {
+	// 	background-image: url(../img/manga_book_card/manga_book_card_dg.png);
+	// }
+
+	// &-mask {
+	// 	margin: -40px -67px -60px;
+	// 	background: linear-gradient(180deg, rgba(93, 89, 78, 0) 0%, rgba(0, 0, 0, 0.0) 39.42%, #43463f 59.62%);
+	// }
 }
 
 // Карточка манги для каталога, подборка для жанра

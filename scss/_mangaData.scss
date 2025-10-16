@@ -1,0 +1,72 @@
+.data-manga {
+    width: 750px;
+}
+
+.data-manga > p {
+    margin: 0 0 22px 42px;
+    font-family: var(--secondFont);
+font-weight: 400;
+font-size: 20px;
+}
+
+.data-manga-title {
+	// margin: 40px 0;
+	padding: 15px 0 15px 42px;
+	font-family: var(--firstFont);
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: var(--darkRedColor);
+	border: none;
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+	background: linear-gradient(90deg, #fff 0%, #43463f 74.04%);
+}
+
+.statistic-block {
+    margin: 10px 0 22px 42px;
+    display: flex;
+    gap: 22px;
+
+    & > p {
+        font-family: var(--secondFont);
+font-weight: 400;
+font-size: 20px;
+line-height: 110%;
+letter-spacing: -0.02em;
+    }
+}
+
+.page-control-block {
+    margin-left: 42px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 33px;
+background-color: var(--lightColor);
+}
+
+.control-item {
+    font-family: var(--secondFont);
+font-weight: 400;
+font-size: 20px;
+line-height: 110%;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+color: var(--darkRedColor);
+cursor: pointer;
+
+&__active {
+    padding: 3px 12px;
+    border: none;
+    color: var(--secondFont);
+    border-radius: 60px;
+    background-color: var(--darkRedColor);
+}
+}

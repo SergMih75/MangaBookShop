@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mangaBookCard.css">
+    <title>Карточка манги</title>
+</head>
+<body>
+    <div class="wrapper">
+			<div class="table table__manga-book-card">
+
+                    <nav class="nav">
+                        <a href="./index.html" class="nav-logo">МАНГА</a>
+                        <menu>
+                            <ul class="menu">
+                                <li><a href="./catalog.html" class="menu-item">Читать</a></li>
+                                <li><a href="#" class="menu-item">Форум</a></li>
+                                <li><a href="./genres.html" class="menu-item">Жанры</a></li>
+                                <li><a href="#" class="menu-item">Профиль</a></li>
+                            </ul>
+                        </menu>
+                        <div class="nav-btn">
+                            <button class="enter">Войти</button>
+                            <button class="registration">Регистрация</button>
+                        </div>
+                    </nav>
+                    <section class="book-card">
+                        <!-- Заполняется через js -->
+                        <div class="data-manga">
+                            <p>Manga 2020</p>
+                            <h1 class="data-manga-title">жанры</h1>
+                            <div class="statistic-block">
+                                <img src="./img/manga_book_card/Like.png" alt="">
+                                <p>Лайков</p>
+                                <img src="./img/manga_book_card/V.png" alt="">
+                                <p>Просмотров</p>
+                                <img src="./img/manga_book_card/Mark.png" alt="">
+                                <p>Закладок</p>
+                            </div>
+                            <div class="page-control-block">
+                                <div class="control-item  control-item__active" attr="general">
+                                    Главная
+                                </div>
+                                <div class="control-item" attr="chapters">
+                                    Главы
+                                </div>
+                                <div class="control-item" attr="discussion">
+                                    Обсуждения
+                                </div>
+                            </div>
+
+                            <div class="page-block">
+                                <div class="page-item  page-item__active" attr="general">
+                                    <article class="description">
+                                        <p class="description-text"></p>
+                                    </article>
+
+                                    <article class="information">
+                                        <!-- Заполняется через js  -->
+                                    </article>
+                                </div>
+
+                                <div class="page-item"  attr="chapters">
+                                    2
+                                </div>
+
+                                <div class="page-item"  attr="discussion">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analog">
+                            <h3>Похожее</h3>
+                            <div class="analog-block">
+                            <!-- <div class="analog-item"> -->
+                                <!-- Заполняется через js -->
+                            <!-- </div> -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+			</div>
+
+    <script src="./js/mangaCadrRender.js"></script>
+    <script src="./js/textDeployment.js"></script>
+    <script src="./js/mangaSearch.js"></script>
+    <script src="./js/mangaPageControl.js"></script>
+</body>
+</html>
