@@ -1,29 +1,18 @@
 .wrapper {
-    max-width: 1440px;
-    width: calc(100vw - 16px);
-    margin: 0 auto;
-    overflow: hidden;
-
-	
+	max-width: 1440px;
+	width: calc(100vw - 16px);
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 .table {
-    padding: 40px 67px 60px; 
-    background-color: var(--bgMaskDark);
-
-	// &__manga-book-card {
-	// 	background-image: url(../img/manga_book_card/manga_book_card_dg.png);
-	// }
-
-	// &-mask {
-	// 	margin: -40px -67px -60px;
-	// 	background: linear-gradient(180deg, rgba(93, 89, 78, 0) 0%, rgba(0, 0, 0, 0.0) 39.42%, #43463f 59.62%);
-	// }
+	padding: 40px 67px 60px;
+	background-color: var(--bgMaskDark);
 }
 
 // Карточка манги для каталога, подборка для жанра
 .book-item {
-	width:395px;
+	width: 395px;
 	border: none;
 	display: flex;
 	border-radius: 30px;
@@ -92,4 +81,99 @@
 	font-size: 16px;
 	line-height: 110%;
 	letter-spacing: -0.02em;
+}
+
+// popup
+
+.popup {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	align-items: center;
+	justify-content: center;
+	background: var(--popup);
+
+	&__active {
+		display: flex;
+	}
+
+	&-close {
+		position: absolute;
+		top: 5px;
+		right: 15px;
+		cursor: pointer;
+		color: red;
+		font-weight: 200;
+	}
+}
+
+.reviews {
+	&-table {
+		position: relative;
+		width: 616px;
+		padding: 34px;
+		border: none;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-ms-border-radius: 15px;
+		-o-border-radius: 15px;
+		background-color: var(--bgShopping);
+	}
+
+	&-text {
+		width: 100%;
+		padding: 12px 20px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-ms-border-radius: 15px;
+		-o-border-radius: 15px;
+		background-color: rgb(170 166 155 / 21%);
+
+		font-family: var(--firstFont);
+		font-weight: 200;
+		font-size: 20px;
+		line-height: 110%;
+		letter-spacing: -0.02em;
+		cursor: var(--lightColor);
+	}
+
+	&-text:focus {
+		outline: none;
+	}
+}
+
+.popup-reviews-btn-field {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popup-reviews-btn {
+	padding: 5px 16px;
+	border: none;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	cursor: pointer;
+
+	font-family: var(--firstFont);
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgb(170 166 155 / 21%);
+
+	&__send {
+		background-color: var(--darkRedColor);
+	}
 }

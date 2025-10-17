@@ -33,6 +33,12 @@
 		-moz-border-radius: 50px;
 		-ms-border-radius: 50px;
 		-o-border-radius: 50px;
+
+		&__manga-card {
+			width: 100%;
+			margin: 15px 0;
+			background-color: var(--bgBookCardPage);
+		}
 	}
 
 	&-user-name {

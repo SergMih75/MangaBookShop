@@ -10,6 +10,8 @@
   --bgFooter: #4a4a4a;
   --bgShoppingCard: rgba(74, 74, 74, 0.63);
   --bgBookCardPage: rgba(225, 225, 225, 0.1);
+  --bgBookReviewsPage: rgba(225, 225, 225, 0.5);
+  --popup: rgb(114 112 108 / 94%);
   --firstFont:"Nunito", sans-serif;
   --secondFont:"Inter", sans-serif;
 }
@@ -25,6 +27,7 @@
 
 body {
   background-color: var(--bgColorLight);
+  position: relative;
 }
 
 .wrapper {
@@ -111,6 +114,90 @@ body {
   letter-spacing: -0.02em;
 }
 
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  background: var(--popup);
+}
+.popup__active {
+  display: flex;
+}
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+  color: red;
+  font-weight: 200;
+}
+
+.reviews-table {
+  position: relative;
+  width: 616px;
+  padding: 34px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: var(--bgShopping);
+}
+.reviews-text {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: rgba(170, 166, 155, 0.21);
+  font-family: var(--firstFont);
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  cursor: var(--lightColor);
+}
+.reviews-text:focus {
+  outline: none;
+}
+
+.popup-reviews-btn-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-reviews-btn {
+  padding: 5px 16px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  cursor: pointer;
+  font-family: var(--firstFont);
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(170, 166, 155, 0.21);
+}
+.popup-reviews-btn__send {
+  background-color: var(--darkRedColor);
+}
+
 .nav {
   margin: 0 auto;
   padding: 12px 12px;
@@ -193,6 +280,107 @@ body {
 
 .registration:hover {
   color: var(--darkRedColor);
+}
+
+.feedback {
+  background-color: var(--bgColorDark);
+  padding: 0 57px 61px;
+}
+.feedback-title {
+  padding: 40px 0;
+  text-align: center;
+  font-family: var(--firstFont);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.feedback-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 45px;
+  row-gap: 20px;
+}
+.feedback-item {
+  width: 45%;
+  padding: 45px;
+  display: flex;
+  align-self: flex-start;
+  border: none;
+  background-color: var(--bgColorLight);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.feedback-item__manga-card {
+  width: 100%;
+  margin: 15px 0;
+  background-color: var(--bgBookCardPage);
+}
+.feedback-user-name {
+  margin-bottom: 10px;
+  font-family: var(--firstFont);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--darkRedColor);
+}
+.feedback-text {
+  margin-bottom: 10px;
+  font-family: var(--firstFont);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+.feedback-text__all {
+  -webkit-line-clamp: 100;
+}
+.feedback-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.feedback-info > p {
+  font-family: var(--firstFont);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.feedback-info > p:hover {
+  color: var(--darkRedColor);
+}
+
+.photo {
+  width: 66px;
+  height: 66px;
+  background-color: var(--bgColorDark);
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.item-block {
+  width: 400px;
+  padding-left: 20px;
 }
 
 .book-card {
@@ -429,6 +617,53 @@ body {
   color: #ffcaaf;
 }
 
+.reviews {
+  padding-top: 43px;
+}
+.reviews-block {
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: var(--bgBookReviewsPage);
+}
+.reviews-block > h5 {
+  font-family: var(--firstFont);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #4a4a4a;
+}
+.reviews-btn {
+  width: 36px;
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--redColor);
+  cursor: pointer;
+  font-family: var(--firstFont);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.reviews-btn:hover {
+  background-color: var(--lightColor);
+  color: var(--redColor);
+}
+
 .chapters-link {
   display: inline-block;
   width: 100%;
@@ -443,4 +678,15 @@ body {
 }
 .chapters-link:hover {
   color: var(--redColor);
+}
+
+.forum {
+  margin: 10px;
+  margin-left: 42px;
+  font-family: var(--secondFont);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
 }/*# sourceMappingURL=mangaBookCard.css.map */

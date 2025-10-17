@@ -2,9 +2,12 @@
 @import './normalizer';
 @import './global';
 @import './_nav.scss';
+@import './feedback';
 @import './mangaCard';
 @import './_controlManga.scss';
 @import './_mangaData.scss';
 @import './_analog-block.scss';
-@import './_pageGeneral.scss';
+@import './_generalPage.scss';
+@import'./_mangaReviews.scss';
 @import './_chaptersPage.scss';
+@import './_forumPage.scss';
